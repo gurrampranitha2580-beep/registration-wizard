@@ -1,16 +1,66 @@
-# React + Vite
+# Registration Wizard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Registration Wizard is a multi-step onboarding form built using React and Vite. The project demonstrates conditional rendering, lifted state management, real-time validation, password visibility toggles, and responsive UI design.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Multi-step registration wizard
+- Conditional rendering for step navigation
+- Parent-managed unified form state
+- Back button retains previously entered data
+- Real-time form validation
+- Regex-based email validation
+- Password minimum length validation
+- Confirm password matching validation
+- Disabled Next button until fields are valid
+- Independent password visibility toggles
+- Dynamic progress indicator
+- Review and submit step
+- Success confirmation screen
+- Responsive modern UI
 
-## React Compiler
+## Steps Included
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Step 1: Personal Info
+- First Name
+- Last Name
+- Date of Birth
 
-## Expanding the ESLint configuration
+### Step 2: Account Details
+- Email
+- Password
+- Confirm Password
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Step 3: Review & Submit
+- Displays entered user details
+- Submit button logs final formData object
+
+## Technologies Used
+
+- React
+- Vite
+- JavaScript
+- CSS
+- React Icons
+
+## Validation Features
+
+- Email validation using regular expressions
+- Password must contain at least 8 characters
+- Confirm password must match password
+- Date of birth blocks future and unrealistic dates
+- Navigation buttons remain disabled until valid input is provided
+
+## Project Structure
+
+```bash
+src
+├── components
+│   ├── StepOne.jsx
+│   ├── StepTwo.jsx
+│   ├── StepThree.jsx
+│   └── Success.jsx
+│
+├── App.jsx
+├── App.css
+└── main.jsx
