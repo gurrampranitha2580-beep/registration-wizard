@@ -51,6 +51,9 @@ Registration Wizard is a multi-step onboarding form built using React and Vite. 
 - Date of birth blocks future and unrealistic dates
 - Navigation buttons remain disabled until valid input is provided
 
+## Deployment Link
+https://registration-wizard-peach.vercel.app/
+
 ## Project Structure
 
 ```bash
